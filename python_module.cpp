@@ -22,6 +22,7 @@ PYBIND11_MODULE(PyCeresFactors, m)
     // SE3 Factors
     m.def("SE3Parameterization", &SE3Parameterization::Create);
     m.def("RelSE3Factor", &RelSE3Factor::Create);
+    m.def("SE3ReprojectionFactor",&SE3ReprojectionFactor::Create);
 
     // Specific Sensor Factors
     m.def("RangeFactor", &RangeFactor::Create);
